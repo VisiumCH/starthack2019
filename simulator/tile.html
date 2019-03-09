@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="9b39091a-21fb-4a41-a8d7-217792f53f6b" data-root-id="6092"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="6409">
+          {"666bdc37-2776-4318-8fa8-d7956fee54f7":{"roots":{"references":[{"attributes":{"below":[{"id":"6101","type":"MercatorAxis"}],"left":[{"id":"6110","type":"MercatorAxis"}],"renderers":[{"id":"6101","type":"MercatorAxis"},{"id":"6109","type":"Grid"},{"id":"6110","type":"MercatorAxis"},{"id":"6118","type":"Grid"},{"id":"6127","type":"BoxAnnotation"},{"id":"6134","type":"TileRenderer"}],"title":{"id":"6304","type":"Title"},"toolbar":{"id":"6125","type":"Toolbar"},"x_range":{"id":"6093","type":"Range1d"},"x_scale":{"id":"6097","type":"LinearScale"},"y_range":{"id":"6095","type":"Range1d"},"y_scale":{"id":"6099","type":"LinearScale"}},"id":"6092","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":"lat"},"id":"6111","type":"MercatorTicker"},{"attributes":{},"id":"6097","type":"LinearScale"},{"attributes":{"dimension":"lon"},"id":"6102","type":"MercatorTicker"},{"attributes":{"formatter":{"id":"6104","type":"MercatorTickFormatter"},"plot":{"id":"6092","subtype":"Figure","type":"Plot"},"ticker":{"id":"6102","type":"MercatorTicker"}},"id":"6101","type":"MercatorAxis"},{"attributes":{"attribution":"Map tiles by &lt;a href=\"https://stamen.com\"&gt;Stamen Design&lt;/a&gt;, under &lt;a href=\"https://creativecommons.org/licenses/by/3.0\"&gt;CC BY 3.0&lt;/a&gt;. Data by &lt;a href=\"https://openstreetmap.org\"&gt;OpenStreetMap&lt;/a&gt;, under &lt;a href=\"https://www.openstreetmap.org/copyright\"&gt;ODbL&lt;/a&gt;.","url":"http://tile.stamen.com/toner-background/{Z}/{X}/{Y}.png"},"id":"6091","type":"WMTSTileSource"},{"attributes":{"callback":null,"end":2000000,"start":1000000},"id":"6093","type":"Range1d"},{"attributes":{"dimension":1,"plot":{"id":"6092","subtype":"Figure","type":"Plot"},"ticker":{"id":"6111","type":"MercatorTicker"}},"id":"6118","type":"Grid"},{"attributes":{"dimension":"lat"},"id":"6113","type":"MercatorTickFormatter"},{"attributes":{"overlay":{"id":"6127","type":"BoxAnnotation"}},"id":"6121","type":"BoxZoomTool"},{"attributes":{},"id":"6119","type":"PanTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"6119","type":"PanTool"},{"id":"6120","type":"WheelZoomTool"},{"id":"6121","type":"BoxZoomTool"},{"id":"6122","type":"SaveTool"},{"id":"6123","type":"ResetTool"},{"id":"6124","type":"HelpTool"}]},"id":"6125","type":"Toolbar"},{"attributes":{"callback":null,"end":7000000,"start":3000000},"id":"6095","type":"Range1d"},{"attributes":{},"id":"6123","type":"ResetTool"},{"attributes":{"dimension":"lon"},"id":"6104","type":"MercatorTickFormatter"},{"attributes":{},"id":"6120","type":"WheelZoomTool"},{"attributes":{"plot":{"id":"6092","subtype":"Figure","type":"Plot"},"ticker":{"id":"6102","type":"MercatorTicker"}},"id":"6109","type":"Grid"},{"attributes":{},"id":"6124","type":"HelpTool"},{"attributes":{"formatter":{"id":"6113","type":"MercatorTickFormatter"},"plot":{"id":"6092","subtype":"Figure","type":"Plot"},"ticker":{"id":"6111","type":"MercatorTicker"}},"id":"6110","type":"MercatorAxis"},{"attributes":{},"id":"6099","type":"LinearScale"},{"attributes":{},"id":"6122","type":"SaveTool"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"6127","type":"BoxAnnotation"},{"attributes":{"tile_source":{"id":"6091","type":"WMTSTileSource"}},"id":"6134","type":"TileRenderer"},{"attributes":{"plot":null,"text":""},"id":"6304","type":"Title"}],"root_ids":["6092"]},"title":"Bokeh Application","version":"1.0.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('6409').textContent;
+                  var render_items = [{"docid":"666bdc37-2776-4318-8fa8-d7956fee54f7","roots":{"6092":"9b39091a-21fb-4a41-a8d7-217792f53f6b"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
