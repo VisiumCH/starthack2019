@@ -490,7 +490,7 @@ def main():
         optimizer.step()
 
     SAVE_EVERY = 10
-    num_episodes = 1
+    num_episodes = 1000
     for i_episode in tqdm_notebook(range(0, num_episodes)):
         # Initialize the environment and state
         env.reset()
